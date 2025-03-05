@@ -1,5 +1,5 @@
 import { ThemeProvider } from "@/components/theme-provider";
-import { ChildrenProps } from "@/types";
+import type { ChildrenProps } from "@/types";
 
 const GlobalProvider = ({ children }: ChildrenProps) => {
 	return (
