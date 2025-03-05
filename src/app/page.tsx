@@ -1,3 +1,4 @@
+import { ThemeSwitcher } from "@/components/theme-switcher";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
@@ -7,6 +8,8 @@ export default function Home() {
 				Hello World
 			</h1>
 			<Button variant="outline">Click me!</Button>
+			<ThemeSwitcher />
 		</section>
 	);
 }
+
