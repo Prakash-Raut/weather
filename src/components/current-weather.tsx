@@ -20,7 +20,7 @@ export const CurrentWeather: React.FC<CurrentWeatherProps> = ({ data }) => {
 					/>
 					<div className="ml-4">
 						<div className="text-4xl font-bold text-gray-800">
-							{data.main.temp / 10}°C
+						{(data.main.temp / 10).toFixed(2)}°C
 						</div>
 						<div className="text-gray-600 capitalize">
 							{data.weather[0].description}
@@ -30,7 +30,7 @@ export const CurrentWeather: React.FC<CurrentWeatherProps> = ({ data }) => {
 				<div className="space-y-2">
 					<div className="flex items-center text-gray-600">
 						<Thermometer className="w-5 h-5 mr-2" />
-						<span>Feels like {data.main.temp / 10}°C</span>
+						<span>Feels like {(data.main.temp / 10).toFixed(2)}°C</span>
 					</div>
 					<div className="flex items-center text-gray-600">
 						<Droplets className="w-5 h-5 mr-2" />
